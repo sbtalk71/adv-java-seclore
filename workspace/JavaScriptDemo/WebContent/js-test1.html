@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function greetAll() {
+		console.log("Within function call...")
+		alert("Hello All")
+	}
+	
+	function writeText(){
+		document.getElementById("out").innerHTML="Hello All";
+	}
+</script>
+</head>
+<body>
+
+<button onclick="writeText()">Click Me and Get Greeted</button>
+
+<p id="out">Greeting will appear here!</p>
+</body>
+</html>

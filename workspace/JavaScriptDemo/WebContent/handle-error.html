@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function showMessage() {
+		try {
+			addalert("Hi");
+		} catch (err) {
+			alert(err.message);
+		}
+	}
+</script>
+</head>
+<body>
+	<button onclick="showMessage()">Click Me!</button>
+</body>
+</html>

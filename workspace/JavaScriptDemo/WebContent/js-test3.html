@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var x=10;
+	function testVars(){
+		let x=20;
+		alert("X inside testVars() "+x)
+	}
+	
+	function test(){
+		alert("X in test() : "+x)
+	}
+	
+	function changeColour(){
+		document.getElementById("bb").style.color="blue"
+	}
+</script>
+</head>
+<body onload="testVars()">
+
+<button onclick="test()" onmouseover="changeColour()" id="bb">check</button>
+</body>
+</html>

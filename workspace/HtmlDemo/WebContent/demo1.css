@@ -1,0 +1,15 @@
+p {
+	text-align: right;
+	color: blue;
+	font-size: 60px;
+	font-family: sans-serif;
+}
+
+.note{
+	
+	text-align: left;
+	color: green;
+	font-size: 60px;
+	font-style: italic;
+	font-family: fantasy;
+}

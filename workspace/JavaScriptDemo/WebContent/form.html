@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function validatForm() {
+		if (document.getElementById("fname").value == "") {
+			alert("First Name required");
+		}
+		if (document.getElementById("lname").value == "") {
+			alert("Last Name required");
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>Form Validation</h1>
+	<hr>
+	<form action=" " onsubmit="return validatForm();">
+		<table>
+			<tr>
+				<td>First Name</td>
+				<td><input type="text" name="fname" id="fname"></td>
+			</tr>
+			<tr>
+				<td>Last Name</td>
+				<td><input type="text" name="lname" id="lname"></td>
+			</tr>
+			<tr>
+
+				<td colspan="2"><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
