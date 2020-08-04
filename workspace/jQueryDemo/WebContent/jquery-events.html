@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SImple JQuery Demo</title>
+<!--
+<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+-->
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#btn1").click(function(){
+			$(".c1").toggle();
+		});
+	});
+</script>
+</head>
+<body>
+
+	<p class="c1">Click here to hide this text</p>
+	<p class="c1">Hide me</p>
+	<p class="c1">hide me too</p>
+	<p class="c1">Click here and see</p>
+	
+	<h1 class="c1">Hello</h1>
+	<h1 class="c1">Hello</h1>
+
+	<button id="btn1">Toggle all</button>
+	
+</body>
+</html>

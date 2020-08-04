@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>SImple JQuery Demo</title>
+<!--
+<script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+-->
+<style type="text/css">
+h1 {
+	background-color: lightblue;
+	border: 4px solid red;
+}
+</style>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$("#h1").mouseenter(function() {
+			$("#h1").hide();
+		});
+		$("#h1").mouseleave(function() {
+			$("#h1").show();
+		});
+		$("#h2").mouseenter(function() {
+			$("#h2").css("background-color","red");
+		});
+		$("#h2").mouseleave(function() {
+			$("#h2").css("background-color","blue");
+		});
+	});
+</script>
+</head>
+<body>
+
+	<h1 id="h1">This is a sample text</h1>
+	<h1 id="h2">Button 2</h1>
+</body>
+</html>

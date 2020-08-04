@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>HttpSessionDemo</display-name>
+	<welcome-file-list>
+		<welcome-file>cart.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>CartServlet1</display-name>
+		<servlet-name>CartServlet1</servlet-name>
+		<servlet-class>com.demo.shop.CartServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CartServlet1</servlet-name>
+		<url-pattern>/CartServlet1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>CartServlet2</display-name>
+		<servlet-name>CartServlet2</servlet-name>
+		<servlet-class>com.demo.shop.CartServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CartServlet2</servlet-name>
+		<url-pattern>/CartServlet2</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>CheckOutServlet</display-name>
+		<servlet-name>CheckOutServlet</servlet-name>
+		<servlet-class>com.demo.shop.CheckOutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckOutServlet</servlet-name>
+		<url-pattern>/CheckOutServlet</url-pattern>
+	</servlet-mapping>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>CookieApp</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+	<session-config>
+		<session-timeout>180</session-timeout>
+	</session-config>
+</web-app>
